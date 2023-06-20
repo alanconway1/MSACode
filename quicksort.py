@@ -40,12 +40,12 @@ def partition(arr, low, high):
             arr[i], arr[j] = arr[j], arr[i]
     #place pivot in correct position 
     #swap pivot with the item at the border 
-    arr[i + 1], arr[j] = arr[high], arr[i + 1]
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
 
-
+    return i + 1 
 def main(): 
     #create a list
     arr = [40, 80, 10, 90, 30, 50, 70]
     quick_sort(arr)
-
+    print(arr)
 main()
